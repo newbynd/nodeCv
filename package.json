@@ -4,8 +4,9 @@
   "description": "NodeJS page with my online CV",
   "main": "index.js",
   "scripts": {
-    "start": "node src" ,
-    "dev" : "nodemon src"
+    "start": "node src",
+    "dev": "nodemon src",
+    "devbabel": "nodemon src --exec babel-node"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,17 @@
   },
   "homepage": "https://github.com/newbynd/NodeCv#readme",
   "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "cors": "^2.8.5",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
     "nodemon": "^2.0.3"
   }
 }
